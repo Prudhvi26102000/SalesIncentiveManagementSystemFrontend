@@ -1,0 +1,15 @@
+
+.heading1{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 100px;
+    /* background-color:#ecf0f3; */
+}
+
+body{
+    background-color: #ecf0f3;
+}
+
