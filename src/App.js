@@ -8,6 +8,10 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import AddUser from './components/SalesPerson/AddUser';
 import Products from './components/Products/Products.js';
 import AddProducts from './components/Products/AddProducts';
+import Upload from './components/Upload/Upload';
+import Quota from './components/Quota/Quota';
+import AddQuota from './components/Quota/AddQuota';
+import EditQuota from './components/Quota/EditQuota';
 
 function App() {
   return (
@@ -21,6 +25,10 @@ function App() {
         <Route path="/users/add" element={<AddUser />}></Route>
         <Route path="/products" element={<Products />}></Route>
         <Route path="/products/add" element={<AddProducts />}></Route>
+        <Route path="/upload" element={<Upload />}></Route>
+        <Route path="/quota" element={<Quota />}></Route>
+        <Route path="/quotas/add" element={<AddQuota />}></Route>
+        <Route path="/quota/editquota/:id" element={<EditQuota />}></Route>
       </Routes>
     </BrowserRouter>
         

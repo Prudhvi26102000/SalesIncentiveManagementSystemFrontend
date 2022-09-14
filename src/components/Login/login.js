@@ -60,7 +60,7 @@ import axios from 'axios';
 
             if(res.data) alert('Logged in Succsesfully');
             else alert("Invalid Username/password");
-            if(localStorage.getItem('userEmail') === 'admin') {
+            if(localStorage.getItem('userEmail').match === 'admin') {
                 
                 this.props.navigation.navigate("home")
                 console.log("home");

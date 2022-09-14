@@ -50,17 +50,16 @@ import axios from 'axios';
     axios.post('http://localhost:8080/sales/login', userLogin)
         .then(res => {
 
-            
             console.log(res.data);
             localStorage.setItem('userEmail', (res.data) ? this.state.email : 'null');
             console.log(localStorage.getItem('userEmail'));
 
             if(res.data) alert('Logged in Succsesfully');
-            else alert("Invalid Username/password");
+            else alert("Invalid Username/password or User Not Exists");
             if(localStorage.getItem('userEmail') === 'sales') {
                 
                 this.props.navigate("/saleshome")
-                console.log("homw");
+                console.log("home");
             } else if (localStorage.getItem('userEmail') != 'null'){
 
                 console.log("home");

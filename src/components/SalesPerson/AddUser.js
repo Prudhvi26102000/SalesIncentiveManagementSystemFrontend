@@ -95,7 +95,7 @@ const AddUser = () => {
                                 <input
                                 type="number"
                                 className="form-control form-control-lg"
-                                placeholder="Enter Your Contact Number"
+                                placeholder="Enter Commission Value"
                                 name="commission_value"
                                 required
                                 value={commission_value}
